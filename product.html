@@ -54,15 +54,12 @@
           
         
     }  
+    hr{
+     background-color:#0d88c3;
+        height:5px;
+        border: solid #0d88c3;
     
-    footer{  
-        background-color: #111;   
-           padding: 15px 50px; 
-        
-        color:white;   
-      
-                  
-    }  
+    }
         #leftfoot {  
         display: flex;  
         text-align: right;  
@@ -119,12 +116,82 @@
   font-size: 0.9em;
   
 }
- main{color:white;
-   font-size:30px;
- }
- main{color:white;
-   font-size:30px;
- }
+
+ h1 {
+        color: #0d88c3;
+        font-size: 45px;
+        margin-bottom: 40px;
+        text-align:center;
+    }
+
+    /* Product Grid */
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 30px;
+    }
+
+    .product {
+        background: #1a1a1a;
+        border: 3px solid #0d88c3;
+        border-radius: 30px;
+        width: 300px;
+        padding: 25px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    
+
+    .product img {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    .product h3 {
+        color: #ffcc00;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .product p {
+        color: #ccc;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .price {
+        color: #0d88c3;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+        background: #0d88c3;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        font-size: 16px;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        text-align: center;
+    }
+
+    input[type="submit"]:hover {
+        background: #ffcc00;
+        color: black;
+    }
+
     
 </style>  
 </head>  
@@ -142,10 +209,55 @@
           <a href="contact.html">Contact Us</a>  
       </div>  
   </nav>  
-</header>  
+</header>  <hr>
     <main>
   <h1>Our library of games</h1>
    
+
+    <div class="products">
+
+        <div class="product">
+            <img src="drift2.jpg" alt="Drift 2">
+            <h3>Drift 2</h3>
+            <p>Experience ultimate drifting action with new maps, cars, and challenges.</p>
+            <div class="price">&#8377;999</div>
+            <form action="#">
+                <input type="submit" value="Buy Now">
+            </form>
+        </div>
+
+        <div class="product">
+            <img src="racerx.jpg" alt="Racer X">
+            <h3>Racer X</h3>
+            <p>Fast-paced racing with real-time multiplayer and intense graphics.</p>
+            <div class="price">&#8377;799</div>
+            <form action="#">
+                <input type="submit" value="Buy Now">
+            </form>
+        </div>
+
+        <div class="product">
+            <img src="galaxywar.jpg" alt="Galaxy War">
+            <h3>Galaxy War</h3>
+            <p>Explore galaxies, build fleets, and conquer alien empires in 4K space.</p>
+            <div class="price">&#8377;899</div>
+            <form action="#">
+                <input type="submit" value="Buy Now">
+            </form>
+        </div>
+
+        <div class="product">
+            <img src="mindmaze.jpg" alt="Mind Maze">
+            <h3>Mind Maze</h3>
+            <p>A puzzle adventure that challenges your logic and creativity.</p>
+            <div class="price">&#8377;499</div>
+            <form action="#">
+                <input type="submit" value="Buy Now">
+            </form>
+        </div>
+
+    </div><br><br><hr>
+</main>
 </main>
 <footer>
  <img id="logofoot" src="logo.jpg">
