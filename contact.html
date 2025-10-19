@@ -1,0 +1,281 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title>Pysh Games</title>  
+<style>  
+    body {  
+        margin: 0;  
+        background: black;  
+        font-family: Arial, sans-serif;  
+    }  
+  
+    header {  
+        background-color: #111;   
+        padding: 15px 50px;  
+    }  
+  
+    nav {  
+        display: flex;  
+        align-items: center;  
+        justify-content: space-between;  
+          
+    }  
+  
+    nav a {  
+        color: white;  
+        text-decoration: none;  
+        font-size: 40px;  
+        padding:20px;  
+    }  
+  
+    nav a:hover {  
+        color: #ffcc00; /* subtle accent on hover */  
+    }  
+  
+    #logo {  
+        width: 40%;  
+        height: 30%;  
+         
+    }  
+  
+    #left {  
+        display: flex;  
+        text-align: center;  
+        margin-left:100px;
+         
+          
+        
+    }  
+    #right{  
+        display: flex;  
+        text-align: center;  
+        margin-right:100px;
+        
+          
+        
+    }  
+    
+    footer{  
+        background-color: #111;   
+           padding: 15px 50px; 
+        
+        color:white;   
+      
+                  
+    }  
+        #leftfoot {  
+        display: flex;  
+        text-align: right;  
+        margin-top:100px;
+        }
+    footer{  
+        background-color: #111;   
+           padding: 15px 50px; 
+        font-size:20px;
+        color:white;                  
+    }  
+  
+  #follow{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+
+  #follow a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 0.95em;
+    
+  }
+
+  #follow img {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+  }
+
+  #follow a:hover {
+    transform: scale(1.05);
+    color: #fff;
+  }
+
+
+  
+  #logofoot{
+    height:100px;
+    width:100px;
+    margin-left:45%;
+    
+  }
+ 
+  #copy {
+      
+  display: flex;
+  color: #ccc;
+  font-size: 0.9em;
+  
+}
+ main {
+        text-align: center;
+        padding: 60px 20px;
+    }
+
+    h1 {
+        color: #0d88c3;
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+    hr{
+     background-color:#0d88c3;
+        height:5px;
+        border: solid #0d88c3;
+    }
+
+    form {
+        background: #111;
+        border: 3px solid #0d88c3;
+        border-radius: 40px;
+        width: 600px;
+        margin: 0 auto;
+        padding: 40px;
+        padding-right:65px;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        color: #0d88c3;
+        font-weight: bold;
+        font-size:25px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 25px;
+        border: 2px solid #0d88c3;
+        border-radius: 10px;
+        background: #000;
+        color: white;
+        font-size: 20px;
+    }
+
+    
+    
+
+    #send{
+  background: #0d88c3;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 15px;
+  display: block;    
+  margin: 20px auto 0;  
+  width: 30%;          
+  text-align: center;
+}
+  #send:hover {
+  background: white;
+  color: black;
+}
+    #info {
+        margin-top: 50px;
+        font-size: 20px;
+        color: #ccc;
+    }
+
+    #info a {
+        color: #0d88c3;
+        text-decoration: none;
+    }
+
+    #info a:hover {
+        color: #ffcc00;
+    }
+    
+</style>  
+</head>  
+<body>  
+  
+<header>  
+  <nav>  
+      <div id="left">  
+          <a href="index.html">Home</a>  
+      </div>  
+  
+      <img id="logo" src="logo.jpg" alt="Pysh Games Logo">  
+  
+      <div id="right">  
+          <a href="product.html">Products</a>  
+      </div>  
+  </nav>  
+</header>  
+    <hr>
+        <main>
+    <h1>Contact Us</h1>
+
+    <form action="server" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address">
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Subject of your message">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here..."></textarea>
+
+        <input id="send" type="submit" value="Send Message">
+    </form>
+
+    <div id="info">
+        <p>Email: <a href="mailto:support@pyshgames.com">support@pyshgames.com</a></p>
+        <p> Give a call at: <a href="tel:+91 98765 43210">+91 98765 43210</a></p>
+    </div>
+</main>
+
+<hr>
+
+    </main>
+<footer>
+<img id="logofoot" src="logo.jpg">
+     
+   <div id="follow">
+    <a href="https://www.youtube.com/" target="_blank">
+      <img src="youtube.jpg" alt="YouTube">
+      <span>YouTube</span>
+    </a>
+      
+    <a href="https://www.instagram.com/pyshgames" target="_blank">
+      <img src="instagram.jpg" alt="Instagram">
+      <span>Instagram</span>
+    </a>
+      
+    <a href="https://x.com/" target="_blank">
+      <img src="x.jpg" alt="X">
+      <span>X(Twitter)</span>
+    </a>
+   </div>
+    
+  <div id="copy">
+  <div > &copy; 2008</div>
+  <div style="text-align: center; flex:1;"> &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Pysh Games&reg;</div>
+  <div style="text-align: right;">All Rights Reserved</div>
+    </div>
+    
+</footer>
+    
+    
+  
+</body>  
+</html>  
+  
+  
