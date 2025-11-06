@@ -1,281 +1,338 @@
-o<!DOCTYPE html>  
-<html>  
-<head>  
-<title>Pysh Games</title>  
-<style>  
-    body {  
-        margin: 0;  
-        background: black;  
-        font-family: Arial, sans-serif;  
-    }  
-  
-    header {  
-        background-color: #111;   
-        padding: 15px 50px;  
-    }  
-  
-    nav {  
-        display: flex;  
-        align-items: center;  
-        justify-content: space-between;  
-          
-    }  
-  
-    nav a {  
-        color: white;  
-        text-decoration: none;  
-        font-size: 40px;  
-        padding:20px;  
-    }  
-  
-    nav a:hover {  
-        color: #ffcc00; /* subtle accent on hover */  
-    }  
-  
-    #logo {  
-        width: 40%;  
-        height: 30%;  
-         
-    }  
-  
-    #left {  
-        display: flex;  
-        text-align: center;  
-        margin-left:100px;
-         
-          
-        
-    }  
-    #right{  
-        display: flex;  
-        text-align: center;  
-        margin-right:100px;
-        
-          
-        
-    }  
-    
-    footer{  
-        background-color: #111;   
-           padding: 15px 50px; 
-        
-        color:white;   
-      
-                  
-    }  
-        #leftfoot {  
-        display: flex;  
-        text-align: right;  
-        margin-top:100px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pysh Games</title>
+    <style>
+        /* Base styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-    footer{  
-        background-color: #111;   
-           padding: 15px 50px; 
-        font-size:20px;
-        color:white;                  
-    }  
-  
-  #follow{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 20px;
-  }
+        
+        body {
+            margin: 0;
+            background: black;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
 
-  #follow a {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: #ccc;
-    font-size: 0.95em;
+        /* Header and Navigation */
+        header {
+            background-color: #111;   
+            padding: 1rem 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        #l {
+            width: 120px;
+            height: auto;
+            order: -1; /* Logo appears first on mobile */
+        }
+
+        #left, #right {
+            display: flex;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+        }
+
+        nav a:hover {
+            color: #e1282d;
+        }
+
+        hr {
+            background-color: #e1282d;
+            height: 3px;
+            border: none;
+            margin: 1.5rem 0;
+        }
+
+        /* Main Content */
+        main {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Form Styles */
+        form {
+            background: #111;
+            border: 3px solid #e1282d;
+            border-radius: 40px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: left;
+            font-size: 1rem;
+            max-width: 600px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1.5rem;
+            border: 2px solid #e1282d;
+            border-radius: 10px;
+            background: #000;
+            color: white;
+            font-size: 1rem;
+            font-family: Arial, sans-serif;
+        }
+
+        #s {
+            background: #e1282d;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.1rem;
+            border-radius: 15px;
+            display: block;
+            margin: 1.5rem auto 0;
+            width: 180px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+
+        #s:hover {
+            background: white;
+            color: black;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;   
+            padding: 1.5rem 1rem;
+            font-size: 0.9rem;
+            color: white;
+        }
+
+        #lf {
+            height: 80px;
+            width: 80px;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+
+        #f {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        #f a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        #f img {
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+        }
+
+        #f a:hover {
+            transform: scale(1.05);
+            color: #fff;
+        }
+
+        #c {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: #ccc;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        /* Tablet and Desktop Styles */
+        @media (min-width: 768px) {
+            /* Header */
+            header {
+                padding: 1rem 3rem;
+            }
+            
+            nav {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            
+            #l {
+                width: 150px;
+                order: 0;
+            }
+            
+            nav a {
+                font-size: 1.8rem;
+            }
+            
+            /* Main Content */
+            main {
+                padding: 3rem 2rem;
+            }
+            
+            h1 {
+                font-size: 3.5rem;
+            }
+            
+            form {
+                padding: 2.5rem;
+                font-size: 1.1rem;
+            }
+            
+            label {
+                font-size: 1.3rem;
+            }
+            
+            input, textarea {
+                font-size: 1.1rem;
+            }
+            
+            /* Footer */
+            footer {
+                padding: 2rem 3rem;
+            }
+            
+            #c {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        /* Large Desktop Styles */
+        @media (min-width: 1200px) {
+            header {
+                padding: 1rem 5rem;
+            }
+            
+            #l {
+                width: 200px;
+            }
+            
+            nav a {
+                font-size: 2.2rem;
+            }
+            
+            main {
+                padding: 4rem 5rem;
+            }
+            
+            h1 {
+                font-size: 4.5rem;
+            }
+            
+            form {
+                padding: 3rem;
+                max-width: 700px;
+            }
+            
+            footer {
+                padding: 2rem 5rem;
+            }
+            
+            #lf {
+                height: 100px;
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="left">
+                <a href="index.html">Home</a>
+            </div>
+            <img id="l" src="logo.png" alt="Pysh Games Logo">
+            <div id="right">
+                <a href="product.html">Games</a>
+            </div>
+        </nav>
+    </header>
     
-  }
-
-  #follow img {
-    width: 24px;
-    height: 24px;
-    border-radius: 5px;
-  }
-
-  #follow a:hover {
-    transform: scale(1.05);
-    color: #fff;
-  }
-
-
-  
-  #logofoot{
-    height:100px;
-    width:100px;
-    margin-left:45%;
-    
-  }
- 
-  #copy {
-      
-  display: flex;
-  color: #ccc;
-  font-size: 0.9em;
-  
-}
- main {
-        text-align: center;
-        padding: 60px 20px;
-    }
-
-    h1 {
-        color: #0d88c3;
-        font-size: 60px;
-        margin-bottom: 40px;
-    }
-    hr{
-     background-color:#0d88c3;
-        height:5px;
-        border: solid #0d88c3;
-    }
-
-    form {
-        background: #111;
-        border: 3px solid #0d88c3;
-        border-radius: 40px;
-        width: 600px;
-        margin: 0 auto;
-        padding: 40px;
-        padding-right:65px;
-        text-align: left;
-        font-size: 20px;
-    }
-
-    label {
-        display: block;
-        margin-bottom: 10px;
-        color: #0d88c3;
-        font-weight: bold;
-        font-size:25px;
-    }
-
-    input, textarea {
-        width: 100%;
-        padding: 12px;
-        margin-bottom: 25px;
-        border: 2px solid #0d88c3;
-        border-radius: 10px;
-        background: #000;
-        color: white;
-        font-size: 20px;
-    }
-
-    
-    
-
-    #send{
-  background: #0d88c3;
-  color: white;
-  padding: 15px 30px;
-  font-size: 18px;
-  border-radius: 15px;
-  display: block;    
-  margin: 20px auto 0;  
-  width: 30%;          
-  text-align: center;
-}
-  #send:hover {
-  background: white;
-  color: black;
-}
-    #info {
-        margin-top: 50px;
-        font-size: 20px;
-        color: #ccc;
-    }
-
-    #info a {
-        color: #0d88c3;
-        text-decoration: none;
-    }
-
-    #info a:hover {
-        color: #ffcc00;
-    }
-    
-</style>  
-</head>  
-<body>  
-  
-<header>  
-  <nav>  
-      <div id="left">  
-          <a href="index.html">Home</a>  
-      </div>  
-  
-      <img id="logo" src="logo.jpg" alt="Pysh Games Logo">  
-  
-      <div id="right">  
-          <a href="product.html">Games</a>  
-      </div>  
-  </nav>  
-</header>  
     <hr>
-        <main>
-    <h1>Contact Us</h1>
-
-    <form action="server" method="post">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name">
-
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email address">
-
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" placeholder="Subject of your message">
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" placeholder="Write your message here..."></textarea>
-
-        <input id="send" type="submit" value="Send Message">
-    </form>
-
-    <div id="info">
-        <p>Email: <a href="mailto:support@pyshgames.com">support@pyshgames.com</a></p>
-        <p> Give a call at: <a href="tel:+91 98765 43210">+91 98765 43210</a></p>
-    </div>
-</main>
-
-<hr>
-
+    
+    <main>
+        <h1>Contact Us</h1>
+        
+        <form action="server" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+            
+            <input id="s" type="submit" value="Send Message">
+        </form>
     </main>
-<footer>
-<img id="logofoot" src="logo.jpg">
-     
-   <div id="follow">
-    <a href="https://www.youtube.com/" target="_blank">
-      <img src="youtube.jpg" alt="YouTube">
-      <span>YouTube</span>
-    </a>
-      
-    <a href="https://www.instagram.com/pyshgames" target="_blank">
-      <img src="instagram.jpg" alt="Instagram">
-      <span>Instagram</span>
-    </a>
-      
-    <a href="https://x.com/" target="_blank">
-      <img src="x.jpg" alt="X">
-      <span>X(Twitter)</span>
-    </a>
-   </div>
     
-  <div id="copy">
-  <div > &copy; 2008</div>
-  <div style="text-align: center; flex:1;"> &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Pysh Games&reg;</div>
-  <div style="text-align: right;">All Rights Reserved</div>
-    </div>
+    <hr>
     
-</footer>
-    
-    
-  
-</body>  
-</html>  
-  
-  
+    <footer>
+        <img id="lf" src="logo.png" alt="Pysh Games Logo">
+        
+        <div id="f">
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="youtube.jpg" alt="YouTube">
+                <span>YouTube</span>
+            </a>
+            
+            <a href="https://www.instagram.com/pyshgames" target="_blank">
+                <img src="instagram.jpg" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+            
+            <a href="https://x.com/" target="_blank">
+                <img src="x.jpg" alt="X">
+                <span>X (Twitter)</span>
+            </a>
+        </div>
+        
+        <div id="c">
+            <div>&copy; 2008</div>
+            <div>Pysh Games&reg;</div>
+            <div>All Rights Reserved</div>
+        </div>
+    </footer>
+</body>
+</html>
